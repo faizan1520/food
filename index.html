@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const order = prompt(`Enter Number to choose an item:
+1. karahi
+2.fish`);
+let price = 0; 
+if (order == 1) {
+    let karahi = prompt(`Enter the type of Karahi:
+    1. Chicken Karahi (700rs)
+    2. Mutton Karahi (1050rs)
+    3. Beef Karahi (900rs)`);
+    let price;
+    if (karahi == 1) {
+        let kg = prompt("Which kg?");
+        price = 700 * kg; 
+        alert("The total price is: " + price + "rs");
+    } else if (karahi == 2) {
+        let kg = prompt("Which kg?");
+        price = 1050 * kg; 
+        alert("The total price is: " + price + "rs");
+    } else if (karahi == 3) {
+        let kg = prompt("Which kg?");
+        price = 900 * kg; 
+        alert("The total price is: " + price + "rs");
+    }   let confirmation = prompt (`You selected a karahi costing ${price}rs. Do you want to confirm the order?
+1. Yes
+2. No`);
+ if ( confirmation == 1)
+    alert(`Thank you very much! Your total amount is ${price}rs.`)
+ }
+ if (order == 2) {
+    let fish = prompt(`Enter the type of fish:
+    1. paplate fish (1400rs)
+    2. finger fish (1800rs)
+    3. fish katakat (900rs)`);
+    let price;
+    if (fish == 1) {
+        let kg = prompt("Which kg?");
+        price = 1400 * kg; 
+        alert("The total price is: " + price + "rs");
+    } else if (fish == 2) {
+        let kg = prompt("Which kg?");
+        price = 1800 * kg; 
+        alert("The total price is: " + price + "rs");
+    } else if (fish == 3) {
+        let kg = prompt("Which kg?");
+        price = 900 * kg; 
+        alert("The total price is: " + price + "rs");
+    }   let confirmation = prompt (`You selected a fish costing ${price}rs. Do you want to confirm the order?
+1. Yes
+2. No`);
+ if ( confirmation == 1)
+    alert(`Thank you very much! Your total amount is ${price}rs.`)
+ }
+    </script>
+</body>
+</html>
